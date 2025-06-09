@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Annonces</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fb;
+    }
+
+    header {
+      background: linear-gradient(to right, #003366, #0055cc);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    header img {
+      height: 80px;
+      background-color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #002b80;
+      flex-wrap: wrap;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown > a {
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.25rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      gap: 0.6rem;
+      transition: background 0.3s;
+    }
+
+    .dropdown > a img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .dropdown > a:hover,
+    .dropdown:hover > a {
+      background-color: #0040bf;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0040bf;
+      min-width: 220px;
+      z-index: 1;
+      flex-direction: column;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+
+    .dropdown-content a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: normal;
+      font-size: 0.95rem;
+    }
+
+    .dropdown-content a::before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #0066ff;
+    }
+
+    footer {
+      background-color: #dcdcdc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .main-btns {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .main-btns a {
+      padding: 1rem 2rem;
+      background-color: #0055cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .main-btns a:hover {
+      background-color: #0040aa;
+    }
+  
+img.construction {
+  width: 200px;
+  margin: 2rem auto;
+  display: block;
+}
+        </style>
+</head>
+<body>
+<header>
+<a href="../index.html"><img alt="Logo du club" src="../assets/logo.png"/></a>
+<h1>ROYAL EVEIL TT AUDERGHEM</h1>
+</header><nav>
+<div class="dropdown">
+<a href="#"><img alt="Raquette" src="../raquette.png"/> LE CLUB</a>
+<div class="dropdown-content">
+<a href="../club/presentation.html">Présentation</a>
+<a href="../club/historique.html">Historique</a>
+<a href="../club/equipe.html">L'équipe encadrante</a>
+<a href="../club/valeurs.html">Valeurs du club</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#"><img alt="Raquette" src="../raquette.png"/> INFOS PRATIQUES</a>
+<div class="dropdown-content">
+<a href="../infos/horaires.html">Horaires &amp; lieux</a>
+<a href="../infos/cotisations.html">Cotisations</a>
+<a href="../infos/inscriptions.html">Inscriptions</a>
+<a href="../infos/materiel.html">Matériel conseillé</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#"><img alt="Raquette" src="../raquette.png"/> ACTUS &amp; ÉVÉNEMENTS</a>
+<div class="dropdown-content">
+<a href="../actus/nouvelles.html">Dernières nouvelles</a>
+<a href="../actus/tournois.html">Tournois internes</a>
+<a href="../actus/evenements.html">Événements</a>
+<a href="../actus/annonces.html">Annonces</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#"><img alt="Raquette" src="../raquette.png"/> PHOTOS / VIDÉOS</a>
+<div class="dropdown-content">
+<a href="../galerie/entrainements.html">Entraînements</a>
+<a href="../galerie/competitions.html">Compétitions</a>
+<a href="../galerie/galerie_evenements.html">Événements du club</a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#"><img alt="Raquette" src="../raquette.png"/> CONTACT</a>
+<div class="dropdown-content">
+<a href="../contact/coordonnees.html">Coordonnées</a>
+<a href="../contact/plan.html">Plan d'accès</a>
+<a href="../contact/formulaire.html">Formulaire de contact</a>
+<a href="../contact/reseaux.html">Réseaux sociaux</a>
+</div>
+</div>
+</nav>
+
+<main>
+<img alt="En construction" class="construction construction" src="../assets/en_construction.png"/>
+<p>Cette page est en cours de construction. Revenez bientôt !</p>
+</main>
+</body>
+</html>
